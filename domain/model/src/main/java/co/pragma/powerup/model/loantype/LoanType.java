@@ -1,0 +1,23 @@
+package co.pragma.powerup.model.loantype;
+import lombok.Builder;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.math.BigDecimal;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder(toBuilder = true)
+public class LoanType {
+    private Long id;
+    private String name;
+    private BigDecimal amountMin;
+    private BigDecimal amountMax;
+    private BigDecimal interestRate;
+    private Integer termMin;
+    private Boolean validAutomatic;
+}
